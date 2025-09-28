@@ -38,6 +38,7 @@ Chi tiết Liên hệ
 
 <ContactCard :contact="activeContact" />
 <router-link
+ v-if="activeContact && activeContact._id"
 :to="{
 name: 'contact.edit',
 params: { id: activeContact._id },
